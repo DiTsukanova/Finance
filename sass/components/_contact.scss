@@ -1,0 +1,52 @@
+.contact {
+    padding: 42px 0;
+}
+
+@media (min-width: 767px) {
+    .contact__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .contact__content {
+        padding: 0 20px 0 0;
+    }
+}
+
+.contact__content {
+    padding: 0 0 20px 0;
+}
+
+.contact__title {
+    letter-spacing: 0.1px;
+    @include font(24px, 32px, 700, $primary-text-color)
+}
+
+.contact__title:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.contact__text {
+    letter-spacing: 0.2px;
+    @include font(14px, 20px, 500, $add-text-color)
+}
+
+.contact__button {
+    display: flex;
+    background: $orange-color;
+    border-radius: 5px;
+    min-height: 58px;
+    padding: 5px 40px;
+    color: $ligth-text-color;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease 0s;
+}
+
+
+.contact__button:hover {
+    background-color: #aa5330;
+}

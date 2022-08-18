@@ -1,0 +1,24 @@
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    min-height: 104px;
+
+    @include media-mobile {
+        min-height: 70px;
+    }
+}
+
+
+.header__logo {
+    @include font(24px, 32px, 700, $primary-text-color);
+    letter-spacing: 0.1px;
+
+}

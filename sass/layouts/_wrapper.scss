@@ -1,0 +1,14 @@
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+._container {
+    margin: 0 auto;
+    max-width: $content-width;
+    padding: 0 15px;
+}

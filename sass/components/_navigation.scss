@@ -1,0 +1,41 @@
+.header__navigation {
+    margin-left: 133px;
+
+    @include media-tablet {
+        margin-left: 80px;
+    }
+
+    @include media-mobile {
+        margin-left: 40px;
+    }
+}
+
+.navigation {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navigation__item {
+    list-style-type: none;
+    padding: 0 11px;
+}
+
+.navigation__link {
+    @include font(14px, 24px, 600, $add-text-color);
+    letter-spacing: 0.2px;
+    text-decoration: none;
+
+    @include media-mobile {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    @include media-tablet {
+        color: $primary-text-color;
+    }
+}
+
+.navigation__link:hover {
+    text-decoration: underline;
+}

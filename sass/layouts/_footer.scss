@@ -1,0 +1,133 @@
+.footer__top {
+    background: $dark-bgAdd-color;
+    padding: 40px 0;
+}
+
+
+.footer__row {
+    display: flex;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+    .footer__row {
+        justify-content: center;
+    }
+}
+
+.footer__column {
+    padding: 20px 15px;
+    flex: 0 1 16%;
+    min-width: 170px;
+}
+
+.footer__column:last-child {
+    flex: 0 1 20%;
+}
+
+.footer__label {
+    @include font(16px, 24px, 700, $ligth-text-color);
+    margin-bottom: 20px;
+}
+
+
+.menu-footer__list {
+    padding: 0;
+}
+
+.menu-footer__item {
+    list-style-type: none;
+}
+
+.menu-footer__item:hover {
+    text-decoration: underline;
+}
+
+.menu-footer__Link {
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    @include font(14px, 24px, 600, $ligth-text-color);
+}
+
+.menu-footer__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+
+
+.contacts-footer {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contacts-footer__item {
+    padding: 0 0 0 34px;
+    display: flex;
+    align-items: center;
+    min-height: 30px;
+    @include font(14px, 24px, 600, $ligth-text-color);
+    letter-spacing: 0.2px;
+    text-decoration: none;
+}
+
+.contacts-footer__item:not(:last-child) {
+    margin: 0 0 12px 0;
+}
+
+.contacts-footer__item:hover {
+    text-decoration: underline;
+}
+
+.contacts-footer__item_phone {
+    background: url('../../assets/svg/tel.svg') 0 0 no-repeat;
+}
+
+.contacts-footer__item_map {
+    background: url('../../assets/svg/point.svg') 0 0 no-repeat;
+}
+
+.contacts-footer__item_email {
+    background: url('../../assets/svg/tg.svg') 0 0 no-repeat;
+}
+
+.footer__bottom {
+    padding: 25px 0;
+}
+
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .footer__container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer__copy {
+        margin: 0 0 15px 0;
+        text-align: center;
+    }
+}
+
+.footer__copy {
+    letter-spacing: 0.2px;
+    @include font(14px, 24px, 600, $add-text-color);
+    padding: 5px 0;
+}
+
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+
+.social__item:not(:last-child) {
+    margin-right: 20px;
+}

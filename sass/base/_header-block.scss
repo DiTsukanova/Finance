@@ -1,0 +1,14 @@
+.header-block {
+    text-align: center;
+}
+
+.header-block__title {
+    @include font(40px, 57px, 700, $primary-text-color);
+    letter-spacing: 0.2px;
+    margin-bottom: 10px;
+}
+
+.header-block__subtitle {
+    @include font(14px, 20px, 500, $add-text-color);
+    letter-spacing: 0.2px;
+}

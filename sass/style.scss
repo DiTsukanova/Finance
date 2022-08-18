@@ -1,0 +1,27 @@
+@import "../node_modules/normalize-scss/sass/normalize/import-now";
+@import "../node_modules/normalize-scss/sass/normalize/normalize-mixin";
+@import "../node_modules/normalize-scss/sass/normalize/variables";
+@import "../node_modules/normalize-scss/sass/normalize/vertical-rhythm";
+@import "abstracts/constans";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+
+//base
+@import "base/base";
+@import "base/header-block";
+
+//components
+@import "components/navigation";
+@import "components/preview";
+@import "components/services";
+@import "components/advantages";
+@import "components/practice";
+@import "components/whoweare";
+@import "components/clients";
+@import "components/subscribe";
+@import "components/getintouch";
+@import "components/contact";
+//layouts
+@import "layouts/wrapper";
+@import "layouts/header";
+@import "layouts/footer";

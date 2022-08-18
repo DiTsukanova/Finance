@@ -1,0 +1,96 @@
+.subscribe {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.subscribe::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 77px;
+    left: 0;
+    background: $dark-bg-color;
+}
+
+.subscribe__body {
+    position: relative;
+    z-index: 2;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+    background: $dark-bgAdd-color;
+    border-radius: 2px;
+}
+
+@media (min-width: 1070px) {
+    .subscribe__body {
+        margin: 0 30px;
+    }
+}
+
+@media (min-width: 810px) {
+    .subscribe__body {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .subscribe__title {
+        max-width: 266px;
+    }
+}
+
+
+.subscribe__title {
+    max-width: 266px;
+    letter-spacing: 0.1px;
+    @include font(24px, 32px, 700, $ligth-text-color)
+}
+
+@media (max-width: 810px) {
+    .subscribe__title {
+        margin-bottom: 20px;
+    }
+
+    .subscribe__body {
+        margin: 0px -15px;
+        padding: 20px 15px;
+    }
+}
+
+.subscribe_form {
+    flex: 0 1 50%;
+    display: flex;
+    align-items: center;
+}
+
+.subscribe__input {
+    width: 100%;
+    flex: 1 1 auto;
+    min-height: 58px;
+    padding: 0 20px;
+    background: $ligth-text-color;
+    color: $add-text-color;
+    box-sizing: border-box;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px 0 0 5px;
+    border-right: 0;
+}
+
+.subscribe__input:focus {
+    color: $primary-text-color;
+}
+
+.subscribe__button {
+    background: $orange-color;
+    border: 1px solid #E6E6E6;
+    border-radius: 0px 5px 5px 0px;
+    display: flex;
+    min-height: 58px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $ligth-text-color;
+    padding: 0 22px;
+
+}
